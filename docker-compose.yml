@@ -1,0 +1,14 @@
+version: "3.4"
+
+services:
+
+  react:
+    image: "containerregistrydariamiu30442.azurecr.io/image-front-a2:latest"
+    domainname: "front-a2"
+    ports:
+       - 80:80
+    deploy: 
+          resources:
+            reservations:
+              cpus: '1'
+              memory: 2G
